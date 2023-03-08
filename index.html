@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Lista de contactos</title>
+</head>
+<body>
+    
+    <!-- Form -->
+    <form id="form">
+        <div class="form-inputs">
+            <h1>Lista de Contactos</h1>
+            <!-- Nombre -->
+            <div class="input-container">
+                <label for="name">Nombre:</label>
+                <input id="name" type="text" placeholder="example: Juan" autocomplete="off" >
+            </div>
+            <!-- Apellido -->
+            <div class="input-container">
+                <label for="last-name">Apellido:</label>
+                <input id="last-name" type="text" placeholder="example: Perez" autocomplete="off" >
+            </div>
+            <!-- Paises -->
+            <div class="input-container">
+                <label for="country">Países:</label>
+                <select name="countryCode" id="country" >
+                    <option value="" disabled selected>Seleccionar un país</option>
+                </select>
+            </div>
+            <!-- Phone -->
+            <div class="input-container">
+                <div class="phone-container">
+                    <span class="phone-code">+##</span>
+                    <input id="phone" type="tel" placeholder="1234567890" autocomplete="off" >
+                </div>
+            </div>
+
+             <!-- btn -->
+            <button class="btn-add" type="submit">Agregar</button>
+        </div>
+
+
+        <!-- Contacts -->
+        <div class="form-contacts">
+            <h2>Mis Contactos</h2>
+            <!-- Contact container -->
+            <ul class="contacts-container">
+                <!-- <p class="nothing-contacts">No hay contactos</p> -->
+                <!-- Contact -->
+                <!-- <li class="contact">
+                    <div class="contact-info">
+                        <span class="chart">JB</span>
+                        <div class="contact-inputs">
+                            <input class="disabled name-contact" type="text"  value="Juan" readonly>
+                            <input class="disabled last-name-contact" type="text"  value="Perez"  readonly>
+                        </div>
+                        <span class="flag">🇦🇫</span>
+                    </div>
+                    <div class="contact-number">
+                        <p class="number-phone">+58-412-954-5107</p>
+                    </div>
+                    <div class="contact-btn">
+                        <button class="btn-edit">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 svg-edit"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" /></svg> 
+                        </button>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 svg-delete"><path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" /></svg>
+                        </button>
+                    </div>
+                </li> -->
+               
+            </ul>
+        </div>
+    </form>
+    <script src="./js/countries.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
